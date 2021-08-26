@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>CodersPoint</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CodersPoint</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="java.html">HTML</a></li>
+                            <li><a class="dropdown-item" href="java.html">CSS</a></li>
+                            <li><a class="dropdown-item" href="java.html">JAVASCRIPT</a></li>
+                            <li><a class="dropdown-item" href="java.html">JQUERY</a></li>
+                            <li><a class="dropdown-item" href="java.html">JAVA</a></li>
+                            <li><a class="dropdown-item" href="python.html">PYTHON</a></li>
+                            <li><a class="dropdown-item" href="php.html">PHP</a></li>
+                            <li><a class="dropdown-item" href="java.html">C</a></li>
+                            <li><a class="dropdown-item" href="java.html">C#</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to CodersPoint</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignUp to CodersPoint </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group"> 
+                <label>Name</label>
+                <textarea class="form-control" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="cexampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+           
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1400x500/?,code,laptop" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to CodersPoint</h2>
+                    <p>Confused on which course to take? I have got you covered. Browse courses and find out the best
+                        course for you. Its free!
+                        CodersPoint is my attempt to teach basics and those coding techniques to people in short time
+                        which took me ages to learn.</p>
+                    <button class="btn btn-danger">Front-End</button>
+                    <button class="btn btn-primary">Back-End</button>
+                   
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x500/?,tech,laptop" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Front-End</h2>
+                    <p>Confused on which course to take? I have got you covered. Browse courses and find out the best
+                        course for you. Its free!
+                        CodersPoint is my attempt to teach basics and those coding techniques to people in short time
+                        which took me ages to learn.</p>
+                    <button class="btn btn-danger" href="java.html">HTML</button>
+                    <button class="btn btn-primary">CSS</button>
+                    <button class="btn btn-success">JAVASCRIPT</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x500/?tech,code" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Back-End</h2>
+                    <p>Confused on which course to take? I have got you covered. Browse courses and find out the best
+                        course for you. Its free!
+                        CodersPoint is my attempt to teach basics and those coding techniques to people in short time
+                        which took me ages to learn.</p>
+                    <button class="btn btn-danger">Java</button>
+                    <button class="btn btn-primary">Python</button>
+                    <button class="btn btn-success">PHP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="html.png" width="300" height="300" alt="" class="src">
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be
+                    displayed in a web browser. ... HTML describes the structure of a web page semantically and
+                    originally included cues for the appearance of the document. HTML elements are the building blocks
+                    of HTML pages.</p>
+                <p><a class="btn btn-primary" href="html.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="CSS.png" width="300" height="300" alt="" class="src">
+                <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and
+                    fonts. It allows one to adapt the presentation to different types of devices, such as large screens,
+                    small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup
+                    language.</p>
+                <p><a class="btn btn-primary" href="python.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="javascript.png" width="300" height="300" alt="" class="src">
+                <p>JavaScript is a lightweight, cross-platform, and interpreted scripting language. It is well-known for
+                    the development of web pages, many non-browser environments also use it. JavaScript can be used for
+                    Client-side developments as well as Server-side developments..</p>
+                <p><a class="btn btn-primary" href="python.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="jquery.jpg" width="300" height="300" alt="" class="src">
+                <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well
+                    as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive
+                    MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites.</p>
+                <p><a class="btn btn-primary" href="python.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="java.jpeg" width="300" height="300" alt="" class="src">
+                <p>Java is a programming language and computing platform first released by Sun Microsystems in 1995.
+                    There are lots of applications and websites that will not work unless you have Java installed, and
+                    more are created every day. Java is fast, secure, and reliable. From laptops to datacenters, game
+                    consoles to scientific supercomputers, cell phones to the Internet, Java is everywhere..</p>
+                <p><a class="btn btn-primary" href="python.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="python.jpg" width="300" height="300" alt="" class="src">
+                <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+                    Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it
+                    very attractive for Rapid Application Development, as well as for use as a scripting or glue
+                    language to connect existing components together. ..</p>
+                <p><a class="btn btn-primary" href="python.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="php.png" width="300" height="300" alt="" class="src">
+                <p>PHP is a general-purpose scripting language geared towards web development.[7] It was originally
+                    created by Danish-Canadian programmer Rasmus Lerdorf in 1994.[8] The PHP reference implementation is
+                    now produced by The PHP Group.[9] PHP originally stood for Personal Home Page,[8] but it now stands
+                    for the recursive initialism PHP</p>
+                <p><a class="btn btn-primary" href="java.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="C.png" width="300" height="300" alt="" class="src">
+                <p>In the C Programming Language, the #define directive allows the definition of macros within your
+                    source code. These macro definitions allow constant values to be declared for use throughout your
+                    code.Macro definitions are not variables and cannot be changed by your program code like
+                    variables...</p>
+                <p><a class="btn btn-primary" href="python.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="C++.png" width="300" height="300" alt="" class="src">
+                <p>C# is a general-purpose, multi-paradigm programming language. C# encompasses static typing, strong
+                    typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and
+                    component-oriented programming disciplines.</p>
+                <p><a class="btn btn-primary" href="php.html">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">CodersPoint. <span class="text-muted">It'll blow your
+                        mind.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                    tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                    style="width: 500px; height: 500px;" src="CP.JPG" data-holder-rendered="true">
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020–2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
